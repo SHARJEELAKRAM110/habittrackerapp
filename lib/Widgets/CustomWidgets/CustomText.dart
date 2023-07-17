@@ -7,7 +7,7 @@ class CustomText extends StatelessWidget {
   String? fontFamily = "Rubik";
   FontWeight? fontWeight = FontWeight.w400;
   TextAlign? textAlign = TextAlign.start;
-  int? color = 0xff000000;
+  Color? color=Colors.black;
   double? fontSize = 18;
 
   CustomText(
@@ -24,7 +24,7 @@ class CustomText extends StatelessWidget {
       text,
       textAlign: textAlign,
       style: TextStyle(
-        color: Color(color??0xff000000),
+        color: color,
         fontSize: fontSize?.sp,
         fontWeight: fontWeight,
         fontFamily: "Rubik",

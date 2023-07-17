@@ -6,8 +6,8 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:habit_tracker/Screens/Home_Screen/HomeScreenFive.dart';
 import 'package:habit_tracker/Screens/Home_Screen/HomeScreenFour.dart';
 import 'package:habit_tracker/Screens/Home_Screen/HomeScreenOne.dart';
-import 'package:habit_tracker/Screens/Home_Screen/HomeScreenThree.dart';
-import 'package:habit_tracker/Screens/Home_Screen/HomeScreenTwo.dart';
+import 'package:habit_tracker/Screens/Home_Screen/HomeScreenThree/HomeScreenThree.dart';
+import 'package:habit_tracker/Screens/HomeScreenTwo/HomeScreenTwo.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -22,7 +22,6 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> bottomScreens = [
     HomeScreenOne(),
     HomeScreenTwwo(),
-    HomeScreenThree(),
     HomeScreenFour(),
     HomeScreenFive(),
   ];
@@ -40,35 +39,32 @@ class _HomeScreenState extends State<HomeScreen> {
         activeColor: Colors.black,
         backgroundColor: Colors.white,
         tabs: [
-          GButton(icon: Icons.check_circle,iconColor: Colors.grey,onPressed: (){
+          GButton(backgroundColor:Color(0xff8C96FF),icon: Icons.check_circle,iconColor: Colors.grey,onPressed: (){
             index=0;
           },),
-          GButton(icon: Icons.vertical_distribute_rounded,iconColor: Colors.grey,onPressed: (){
+          GButton(backgroundColor:Color(0xff8C96FF),icon: Icons.vertical_distribute_rounded,iconColor: Colors.grey,onPressed: (){
             setState(() {
               index=1;
             });
           }),
-          GButton(icon: Icons.add_box,iconColor: Colors.black,
+          GButton(backgroundColor:Color(0xff8C96FF),
+              icon: Icons.add_box,iconColor: Colors.black,
 
               onPressed: (){
-                setState(() {
-                  index=2;
-
-                });
-
-
-              }),
-          GButton(icon: Icons.favorite,iconColor: Colors.grey,onPressed: (){
+            showModalBottomSheet(context: context, builder: (context)=>HomeScreenThree());
+              }
+          ),
+          GButton(backgroundColor:Color(0xff8C96FF),icon: Icons.favorite,iconColor: Colors.grey,onPressed: (){
             setState(() {
-              index=3;
+              index=2;
 
             });
 
 
           }),
-          GButton(icon: Icons.headphones_rounded,iconColor: Colors.grey,onPressed: (){
+          GButton(backgroundColor:Color(0xff8C96FF),icon: Icons.headphones_rounded,iconColor: Colors.grey,onPressed: (){
             setState(() {
-              index=4;
+              index=3;
 
             });
 

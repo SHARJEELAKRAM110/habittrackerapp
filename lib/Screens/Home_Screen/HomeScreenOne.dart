@@ -21,12 +21,16 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
           children: [
             Row(
               children: [
-                Text("Hey,",style: TextStyle(fontSize: 20,color: Colors.black.withOpacity(0.6),),),
+                CustomText(
+                  text: "Hey,",
+                  fontSize: 20.sp,
+                  color: Colors.black.withOpacity(0.6),
+                ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 30.0,left: 180),
+                  padding: const EdgeInsets.only(top: 30, left: 180),
                   child: Container(
-                    height: 45,
-                    width: 90,
+                    height: 45.h,
+                    width: 90.w,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Color(0xff8C96FF),
@@ -38,7 +42,9 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                 ),
               ],
             ),
-            SizedBox(height: 15.h,),
+            SizedBox(
+              height: 15.h,
+            ),
             SizedBox(
               width: MediaQuery.of(context).size.width,
               child: Card(
@@ -48,51 +54,73 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("2 DAYS OF ACCOUNTABILITY",style: TextStyle(
+                      CustomText(
+                        text: "2 DAYS OF ACCOUNTABILITY",
                         fontSize: 12,
-                        fontFamily: "Rubik",fontWeight: FontWeight.w600,
-                        color: Colors.white
+                        fontFamily: "Rubik",
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white,
+                        textAlign: TextAlign.start,
                       ),
-                      textAlign: TextAlign.start,),
-                      SizedBox(height: 5.h,),
+                      SizedBox(
+                        height: 5.h,
+                      ),
                       Row(
                         children: [
                           Column(
                             children: [
-                              Icon(Icons.check_circle,color: Colors.white,),
-                              Text("Sat",style: TextStyle(color: Colors.white.withOpacity(0.6)),),
-
+                              Icon(
+                                Icons.check_circle,
+                                color: Colors.white,
+                              ),
+                              Text(
+                                "Sat",
+                                style: TextStyle(
+                                    color: Colors.white.withOpacity(0.6)),
+                              ),
                             ],
                           ),
-                          SizedBox(width: 5.w,),
+                          SizedBox(
+                            width: 5.w,
+                          ),
                           Column(
                             children: [
-                              Icon(Icons.check_circle,color: Colors.white,),
-                              Text("Sun",style: TextStyle(color: Colors.white.withOpacity(0.6)),),
+                              Icon(
+                                Icons.check_circle,
+                                color: Colors.white,
+                              ),
+                              Text(
+                                "Sun",
+                                style: TextStyle(
+                                    color: Colors.white.withOpacity(0.6)),
+                              ),
                             ],
                           ),
-                          SizedBox(width: 80.w,),
+                          SizedBox(
+                            width: 80.w,
+                          ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("GREAT JOB!",style: TextStyle(color: Colors.white.withOpacity(0.6)),),
-                              Text("TAP FOR MORE INFO",style: TextStyle(color: Colors.white.withOpacity(0.6)),),
-
-
+                              CustomText(
+                                  text: "GREAT JOB!",
+                                  color: Color(0xffFFFFFF).withOpacity(0.6)),
+                              CustomText(
+                                  text: "TAP FOR MORE INFO",
+                                  color: Colors.white.withOpacity(0.6)),
                             ],
                           ),
-
                         ],
                       )
                     ],
                   ),
                 ),
-
               ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
-              child: Text("TODAY",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500),),
+              child: CustomText(
+                  text: "TODAY", fontSize: 14, fontWeight: FontWeight.w500),
             ),
             SizedBox(
               height: 200,
@@ -103,52 +131,62 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 10.0),
-                      child: Center(child: Icon(Icons.check_circle_outlined,size: 120,)),
+                      child: Center(
+                          child: Icon(
+                        Icons.check_circle_outlined,
+                        size: 120,
+                      )),
                     ),
-              Text("Amazing! All done for today",style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "Rubik",fontWeight: FontWeight.w600,
-                  color: Colors.black
-              ),
-
-
-              )],
+                    CustomText(
+                        text: "Amazing! All done for today",
+                        fontSize: 20,
+                        fontFamily: "Rubik",
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black),
+                  ],
                 ),
-
-
               ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
-              child: Text("ON THE NEXT DAYS",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500),),
+              child: CustomText(
+                  text: "ON THE NEXT DAYS",
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500),
             ),
-SizedBox(
-  width: MediaQuery.of(context).size.width,
-
-  child:   Card(
-    color: Colors.white,
-    child: Padding(
-      padding: const EdgeInsets.all(10.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-
-        children: [
-
-          Text("10:32",style: TextStyle(fontSize: 10,fontWeight: FontWeight.w500),),
-          Row(
-            children: [
-              Image.asset("assets/images/dumble.jpg",height: 30,width: 30,)
-            ],
-          )
-        ],
-
-      ),
-    ),
-
-  ),
-)
-
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              child: Card(
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      CustomText(
+                          text: "10:32",
+                          fontSize: 10,
+                          fontWeight: FontWeight.w500),
+                      SizedBox(
+                        height: 5.h,
+                      ),
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/images/dumblee.jpg",
+                            height: 30.h,
+                            width: 30.w,
+                          ),
+                          SizedBox(width: 15.w,),
+                          CustomText(text: "dumbble press" ,fontSize: 16,)
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),

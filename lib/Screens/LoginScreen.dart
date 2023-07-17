@@ -135,7 +135,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Center(
                       child: CustomText(
                         text:"OR LOG IN WITH EMAIL",
-                      color: 0xffA1A4B2,
+                      color: Color(0xffA1A4B2),
                     )),
                     SizedBox(height: 30.h,),
                     SizedBox(
