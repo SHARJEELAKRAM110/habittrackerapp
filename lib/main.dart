@@ -1,14 +1,27 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:habit_tracker/Screens/Home_Screen/HomeScreen.dart';
 import 'package:habit_tracker/Screens/SplashScreen.dart';
+import 'package:habit_tracker/controller/auth_controller.dart';
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
+  runApp( MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MyApp extends StatefulWidget {
+   MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  final authCont=Get.put(AuthController());
 
   // This widget is the root of your application.
   @override
@@ -21,11 +34,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
     debugShowCheckedModeBanner: false,
     title: 'Flutter Demo',
-    theme: ThemeData(
-    colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-    useMaterial3: true,
-    ),
-    home: SplashScreen(),
+
+   home: SplashScreen(),
     );
     });
   }

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "219625975577",
+    "project_id": "prize-winnning",
+    "storage_bucket": "prize-winnning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219625975577:android:06e653a2d892880d425f88",
+        "android_client_info": {
+          "package_name": "com.example.habit_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219625975577-gq0dacarvd4htdojs59gnfaovhqrhm48.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.habit_tracker",
+            "certificate_hash": "5c7fe58c246f85dbf2ed6c81bb9294c8406d5a81"
+          }
+        },
+        {
+          "client_id": "219625975577-unqk7rpa4n28cqsql5rs7ru2holjmrpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0dM63hP0BT62PJ_e1Brg4fxm7TaQ5AWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219625975577-unqk7rpa4n28cqsql5rs7ru2holjmrpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

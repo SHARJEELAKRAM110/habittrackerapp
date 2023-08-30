@@ -4,7 +4,8 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
 import '../../../Widgets/CustomWidgets/CustomText.dart';
-import 'NewHabit.dart';
+import 'NewHabit/NewHabit.dart';
+import 'StartReflection.dart';
 
 class HomeScreenThree extends StatefulWidget {
   const HomeScreenThree({super.key});
@@ -20,8 +21,7 @@ class _HomeScreenThreeState extends State<HomeScreenThree> {
       height: 200.h,
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.only(topRight: Radius.circular(20),topLeft: Radius.circular(20))
+          borderRadius: BorderRadius.only(topRight: Radius.circular(10),topLeft: Radius.circular(20))
 
         ),
           width: double.infinity,
@@ -48,14 +48,19 @@ class _HomeScreenThreeState extends State<HomeScreenThree> {
                 height: 10,
               ),
             ),
-            Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 10.0),
-                  child: Image.asset("assets/images/reflection.jpg",height: 80.h,width: 150.w,),
-                ),
-                CustomText(text:"Start reflection",fontWeight: FontWeight.w600,fontSize: 18,)
-              ],
+            InkWell(
+              onTap: (){
+                Get.to(StartReflection());
+              },
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10.0),
+                    child: Image.asset("assets/images/reflection.jpg",height: 80.h,width: 150.w,),
+                  ),
+                  CustomText(text:"Start reflection",fontWeight: FontWeight.w600,fontSize: 18,)
+                ],
+              ),
             ),
 
           ],

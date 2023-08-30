@@ -39,6 +39,24 @@ dependencies:
   flutter_screenutil: ^5.8.4
   get: ^4.6.5
   google_nav_bar: ^5.0.6
+  carousel_slider: ^4.2.1
+  smooth_page_indicator: ^1.1.0
+  flutter_swipe_button: ^2.1.1+1
+  firebase_core: ^2.15.0
+  cloud_firestore: ^4.8.3
+  firebase_auth: ^4.7.1
+  fluttertoast: ^8.2.2
+  firebase_storage: ^11.2.5
+  google_sign_in: ^6.1.4
+  shared_preferences: ^2.2.0
+  flutter_spinkit: ^5.2.0
+  firebase_database: ^10.2.4
+  flutter_time_picker_spinner: ^2.0.0
+  audioplayers: ^5.0.0
+  calender_picker:
+  flutter_calendar_carousel:
+  syncfusion_flutter_datepicker:
+  fl_chart: ^0.63.0
 
 
 

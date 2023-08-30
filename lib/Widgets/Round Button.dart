@@ -25,8 +25,8 @@ final Color textColor,buttonColor;
       height: height.h,
       width: width.w,
       decoration: BoxDecoration(
-        color: Color(0xffDDCA7F),
-        borderRadius: BorderRadius.circular(10)
+          color: Colors.deepPurple,
+        borderRadius: BorderRadius.circular(20)
       ),
       child: loading?Center(child: CircularProgressIndicator()):
       Center(child: Text(title,style: Theme.of(context).textTheme.titleMedium!.copyWith(color: Colors.black),)),
