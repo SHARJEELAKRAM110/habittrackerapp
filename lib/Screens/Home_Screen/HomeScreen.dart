@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:habit_tracker/Screens/HomeScreenFive/HomeScreenFive.dart';
 import 'package:habit_tracker/Screens/Home_Screen/HomeScreenFour.dart';

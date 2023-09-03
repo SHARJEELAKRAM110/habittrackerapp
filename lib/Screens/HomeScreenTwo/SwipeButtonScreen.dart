@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:habit_tracker/Screens/Home_Screen/HomeScreen.dart';
 
 import '../../Widgets/CustomWidgets/CustomText.dart';
-import '../HomeScreenFive/HomeScreenFive.dart';
-import '../HomeScreenOne/HomeScreenOne.dart';
 
 class SwipeButtonScreen extends StatefulWidget {
   const SwipeButtonScreen({super.key});
@@ -30,7 +29,7 @@ class _SwipeButtonScreenState extends State<SwipeButtonScreen> {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Center(child:
-                CustomText(text: "LEVEL  1",fontWeight: FontWeight.w500,fontSize: 12,),
+                CustomText(text: "LEVEL  1",fontWeight: FontWeight.w500,fontSize: 12,color: Colors.white,),
                 ),
               ),
             ),
@@ -49,7 +48,7 @@ SizedBox(height: 80.h,),
               height: 45.h,
               width: double.infinity,
               child: MaterialButton(onPressed: (){
-                Get.back();
+                Get.to(HomeScreen());
               },
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
@@ -61,7 +60,7 @@ SizedBox(height: 80.h,),
             SizedBox(height: 20.h,),
             InkWell(
               onTap: (){
-                Get.back();
+                Get.to(HomeScreen());
               },
                 child: CustomText(text: "LATER",fontWeight: FontWeight.w500,fontSize: 12,color: Colors.white,)),
 

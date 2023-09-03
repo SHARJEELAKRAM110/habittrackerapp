@@ -1,6 +1,3 @@
-import 'dart:convert';
-
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -150,7 +147,7 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  padding:  EdgeInsets.fromLTRB( 8.w,8.h,0,8.h),
                   child: CustomText(
                       text: "TODAY", fontSize: 14, fontWeight: FontWeight.w500),
                 ),
@@ -180,14 +177,14 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  padding:  EdgeInsets.fromLTRB( 8.w,12.h,0,0),
                   child: CustomText(
                       text: "ON THE NEXT DAYS",
                       fontSize: 14,
                       fontWeight: FontWeight.w500),
                 ),
                 SizedBox(
-                  height: 400.h,
+                  height: 300.h,
                   width: double.infinity,
                   child: StreamBuilder(
                     stream: cont.stream, // The stream you want to listen to
