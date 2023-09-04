@@ -57,6 +57,7 @@ dependencies:
   flutter_calendar_carousel:
   syncfusion_flutter_datepicker:
   fl_chart: ^0.63.0
+  flutter_stripe: ^9.3.0
 
 
 

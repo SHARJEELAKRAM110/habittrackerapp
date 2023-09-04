@@ -193,12 +193,11 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                         // Use snapshot.data to access the latest data from the stream
                         return ListView.builder(
                             scrollDirection: Axis.vertical,
-                            itemCount: 1,
+                            itemCount: snapshot.data.exists?1:0,
                             itemBuilder: (context,index){
                               return  InkWell(
                                 onTap: (){
                                   Get.to(ScreenOnehdfnf());
-
                                 },
                                 child: SizedBox(
                                   width: MediaQuery.of(context).size.width,
@@ -212,7 +211,7 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                                           Padding(
                                             padding: const EdgeInsets.only(left: 15.0),
                                             child: CustomText(
-                                                text: "${snapshot.data['timeSet']}",
+                                                text: "${snapshot.data['timeSet'].toString()}",
                                                 fontSize: 10,
                                                 fontWeight: FontWeight.w500),
                                           ),
